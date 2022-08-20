@@ -20,6 +20,24 @@ export const ButtonConfirm = ({contentConfirm}) => {
     )
   }
 
+  export const ButtonCancel1 = ({contentCancel1}) => {
+    return (
+      <button type={contentCancel1.type} className={contentCancel1.className}>{contentCancel1.value}</button>
+    )
+  }
+  
+  export const ButtonConfirm1 = ({contentConfirm1}) => {
+      return (
+        <button type={contentConfirm1.type} className={contentConfirm1.className}>{contentConfirm1.value}</button>
+      )
+    }
+  
+    export const ButtonAdd1 = ({contentAdd1}) => {
+      return (
+        <button type={contentAdd1.type} className={contentAdd1.className}>{contentAdd1.value}</button>
+      )
+    }
+
   export const ButtonCancel2 = ({contentCancel2}) => {
     return (
       <button type={contentCancel2.type} className={contentCancel2.className}>{contentCancel2.value}</button>

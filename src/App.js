@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <ClientProvider>
         <Routes>
-          <Route path="/">
+          <Route path="/" element={<ViewButtons />}>
             <Route index element={<ViewButtons />} />
           </Route>
         </Routes>

@@ -7,6 +7,9 @@ const ClientProvider = ({children}) => {
   const [contentCancel, setContentCance] = useState({})
   const [contentConfirm, setContentConfirm] = useState({})
   const [contentAdd, setContentAdd] = useState({})
+  const [contentCancel1, setContentCance1] = useState({})
+  const [contentConfirm1, setContentConfirm1] = useState({})
+  const [contentAdd1, setContentAdd1] = useState({})
   const [contentCancel2, setContentCance2] = useState({})
   const [contentConfirm2, setContentConfirm2] = useState({})
   const [contentAdd2, setContentAdd2] = useState({})
@@ -25,17 +28,30 @@ const ClientProvider = ({children}) => {
         // SIMPLES
       setContentCance({
         'value': 'cancelar',
-        'className': 'cursor-pointer bg-rose-500 text-center shadow-lg shadow-rose-100 px-4 py-3 text-white rounded-lg font-bold capitalize hover:shadow-none hover:bg-rose-600 transition-colors'
+        'className': 'cursor-pointer bg-rose-500 text-center px-4 py-3 text-white rounded-lg font-bold capitalize hover:bg-rose-600 transition-colors'
       })
       setContentConfirm({
         'value': 'Confirmar',
-        'className': 'cursor-pointer bg-sky-500 text-center shadow-lg shadow-sky-100 px-4 py-3 text-white rounded-lg font-bold capitalize hover:shadow-none hover:bg-sky-600 transition-colors'
+        'className': 'cursor-pointer bg-sky-500 text-center px-4 py-3 text-white rounded-lg font-bold capitalize hover:bg-sky-600 transition-colors'
       })
       setContentAdd({
         'value': 'Agregar',
-        'className': 'cursor-pointer bg-lime-500 text-center shadow-lg shadow-lime-100 px-4 py-3 text-white rounded-lg font-bold capitalize hover:shadow-none hover:bg-lime-600 transition-colors'
+        'className': 'cursor-pointer bg-lime-500 text-center px-4 py-3 text-white rounded-lg font-bold capitalize hover:bg-lime-600 transition-colors'
       })
-  
+      
+      setContentCance1({
+        'value': 'cancelar',
+        'className': 'cursor-pointer bg-rose-500 text-center px-4 py-3 text-white rounded-lg border-l-8 border-b-8 border-rose-600 hover:border-white font-bold capitalize hover:bg-rose-600 transition-colors'
+      })
+      setContentConfirm1({
+        'value': 'Confirmar',
+        'className': 'cursor-pointer bg-sky-500 text-center px-4 py-3 text-white rounded-lg border-l-8 border-b-8 border-sky-600 hover:border-white font-bold capitalize hover:bg-sky-600 transition-colors'
+      })
+      setContentAdd1({
+        'value': 'Agregar',
+        'className': 'cursor-pointer bg-lime-500 text-center px-4 py-3 text-white rounded-lg border-l-8 border-b-8 border-lime-600 hover:border-white font-bold capitalize hover:bg-lime-600 transition-colors'
+      })
+
       setContentCance2({
         'value': 'cancelar',
         'className': 'cursor-pointer border-t-8 bg-rose-500 text-center px-4 py-3 text-white rounded-lg rounded-t-none border-gray-300 font-bold capitalize hover:shadow-none hover:bg-rose-600 hover:py-6 transition-all'
@@ -97,6 +113,9 @@ return (
       contentCancel,
       contentConfirm,
       contentAdd,
+      contentCancel1,
+      contentConfirm1,
+      contentAdd1,
       contentCancel2,
       contentConfirm2,
       contentAdd2,
